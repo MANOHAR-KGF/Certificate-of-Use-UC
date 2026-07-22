@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ಶಾಲಾ ಅನುದಾನ ಬಳಕೆಯ ಉಪಯೋಗಿತಾ ಪ್ರಮಾಣ ಪತ್ರ</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+background:#f2f2f2;
+font-family:"Noto Sans Kannada",Arial,sans-serif;
+padding:20px;
+color:#000;
+}
+
+#sgc{
+max-width:900px;
+margin:auto;
+background:#fff;
+padding:40px;
+border:1px solid #000;
+position: relative;
+}
+
+.header-top {
+text-align: center;
+margin-bottom: 15px;
+}
+
+/* ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಲಾಂಛನ */
+.gov-seal {
+width: 65px;
+height: auto;
+margin-bottom: 5px;
+}
+
+.header-top h4 {
+font-size: 16px;
+font-weight: normal;
+margin-bottom: 5px;
+}
+
+.header-top h3 {
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.header-top h2 {
+font-size: 22px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.field-row {
+margin-bottom: 15px;
+font-size: 16px;
+display: flex;
+align-items: baseline;
+flex-wrap: wrap;
+}
+
+.field-row input[type="text"] {
+border: none;
+border-bottom: 1px dotted #000;
+outline: none;
+font-size: 16px;
+font-family: inherit;
+padding: 0 5px;
+background: transparent;
+flex-grow: 1;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+margin-bottom: 25px;
+table-layout: fixed;
+}
+
+th, td {
+border: 1px solid #000;
+padding: 8px;
+font-size: 15px;
+text-align: center;
+word-wrap: break-word;
+overflow-wrap: break-word;
+}
+
+th {
+background-color: #f9f9f9;
+}
+
+td textarea {
+width: 100%;
+border: none;
+outline: none;
+font-size: 14px;
+font-family: inherit;
+background: transparent;
+resize: none;
+overflow: hidden;
+text-align: left;
+}
+
+td input {
+width: 100%;
+border: none;
+outline: none;
+font-size: 14px;
+font-family: inherit;
+background: transparent;
+text-align: center;
+}
+
+td:nth-child(2) input, td:nth-child(2) textarea {
+text-align: left;
+}
+
+.declaration-text {
+font-size: 16px;
+line-height: 1.8;
+margin-bottom: 30px;
+text-align: justify;
+}
+
+.declaration-text input[type="text"] {
+border: none;
+border-bottom: 1px dotted #000;
+outline: none;
+font-size: 16px;
+font-family: inherit;
+background: transparent;
+padding: 0 5px;
+display: inline-block;
+}
+
+.date-row {
+margin-bottom: 40px;
+font-size: 16px;
+}
+
+.date-row input {
+border: none;
+border-bottom: 1px dotted #000;
+outline: none;
+font-size: 16px;
+font-family: inherit;
+width: 150px;
+background: transparent;
+}
+
+.footer {
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+font-size: 16px;
+font-weight: bold;
+}
+
+/* ರಚನೆ ಮನೋಹರ್ ಕೆ ಜಿ ಎಫ್ - ಮೀಡಿಯಂ ಸೈಜ್ ವಿನ್ಯಾಸ */
+.creator-credit {
+text-align: center;
+margin-top: 35px;
+font-size: 16px;
+font-weight: 500;
+color: #555;
+letter-spacing: 0.5px;
+}
+
+.btns{
+margin:20px 0;
+text-align:center;
+}
+
+.btns button{
+padding:10px 18px;
+margin:5px;
+border:none;
+background:#1565c0;
+color:#fff;
+font-size:15px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.btns button:hover{
+background:#0d47a1;
+}
+
+.add{
+background:#2e7d32!important;
+}
+
+.del{
+background:#c62828!important;
+padding: 2px 8px;
+color: white;
+border-radius: 3px;
+cursor: pointer;
+}
+
+/* ಪ್ರಿಂಟ್ ಮಾಡುವಾಗ ಬಟನ್‌ಗಳ ಜೊತೆಗೆ 'creator-credit' ಕೂಡ ಮರೆಯಾಗಲು CSS */
+@media print{
+body{
+background:#fff;
+padding:0;
+}
+.btns, .print-hide, .creator-credit {
+display: none !important;
+}
+#sgc{
+border:none;
+padding: 0;
+}
+input, textarea{
+border-bottom: none !important;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div id="sgc">
+
+    <div class="header-top">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Seal_of_Karnataka.png" alt="Seal of Karnataka" class="gov-seal">
+        
+        <h4 contenteditable="true">ಕರ್ನಾಟಕ ಸರ್ಕಾರ</h4>
+        <h4 contenteditable="true">ಶಾಲಾ ಶಿಕ್ಷಣ ಇಲಾಖೆ</h4>
+        <h3 contenteditable="true">2026-27ನೇ ಸಾಲಿನ ಶಾಲಾ ಅನುದಾನ ಬಳಕೆಯ</h3>
+        <h2 contenteditable="true">ಉಪಯೋಗಿತಾ ಪ್ರಮಾಣ ಪತ್ರ</h2>
+    </div>
+
+    <div class="field-row" style="margin-top: 25px;">
+        <label>ಮುಖ್ಯ ಶಿಕ್ಷಕರ ಹೆಸರು :&nbsp;</label>
+        <input type="text" value="">
+    </div>
+
+    <div class="field-row">
+        <label>ಶಾಲೆ ಹೆಸರು ಮತ್ತು ವಿಳಾಸ :&nbsp;</label>
+        <input type="text" value="ಸರ್ಕಾರಿ ಕಿರಿಯ/ಹಿರಿಯ ಪ್ರಾಥಮಿಕ/ಪ್ರೌಢಶಾಲೆ: ">
+    </div>
+
+    <div class="field-row">
+        <label>ಮೊಬೈಲ್ ಸಂಖ್ಯೆ :&nbsp;</label>
+        <input type="text" value="">
+    </div>
+
+    <table id="grantTable">
+        <tr>
+            <th width="8%">ಕ್ರಮಾಂಕ</th>
+            <th width="37%">ಚಟುವಟಿಕೆಯ ಹೆಸರು</th>
+            <th width="15%">ಮಂಜೂರಾದ ಮೊತ್ತ</th>
+            <th width="20%">ಖರ್ಚಾದ ಮೊತ್ತ</th>
+            <th width="12%">ಉಳಿಕೆ ಮೊತ್ತ</th>
+            <th class="print-hide" width="8%">ಕ್ರಿಯೆ</th>
+        </tr>
+        <tr>
+            <td><input type="text" value="01"></td>
+            <td><textarea rows="2" oninput="autoExpand(this)">2026-27 ನೇ ಸಾಲಿನ ಶಾಲಾ ಅನುದಾನ (Component-Code-F.03.12)</textarea></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td><input type="text" value=""></td>
+            <td class="print-hide">
+                <button class="del" onclick="deleteRow(this)">X</button>
+            </td>
+        </tr>
+    </table>
+
+    <div class="btns">
+        <button class="add" onclick="addRow()">+ ಸಾಲು ಸೇರಿಸಿ (Add Row)</button>
+        <button onclick="window.print()">🖨 ಮುದ್ರಿಸಿ (Print)</button>
+        <button onclick="location.reload()">↺ ಮರುಹೊಂದಿಸಿ (Reset)</button>
+    </div>
+
+    <div class="declaration-text" contenteditable="true">
+        2026-27ನೇ ಸಾಲಿನಲ್ಲಿ ಸಮಗ್ರ ಶಿಕ್ಷಣ ಕರ್ನಾಟಕ ಯೋಜನೆ ಅಡಿಯಲ್ಲಿ <b>ಶಾಲಾ ಅನುದಾನವು</b> ಉಪನಿರ್ದೇಶಕರು (ಆಡಳಿತ) ಕಚೇರಿಯಿಂದ 
+        ...................................................... ಸರ್ಕಾರಿ ಕಿರಿಯ/ಹಿರಿಯ ಪ್ರಾಥಮಿಕ/ಪ್ರೌಢಶಾಲೆಗೆ C.S.S. Portal ಮೂಲಕ ಬಿಡುಗಡೆಯಾದ ಅನುದಾನದ ರೂ. .......................... (ಮೊತ್ತಅಕ್ಷರಗಳಲ್ಲಿ ..............................................................................) ಗಳನ್ನು ಯಾವ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಂಜೂರಾತಿ ನೀಡಲಾಗಿದೆಯೋ ಅದೇ ಉದ್ದೇಶಕ್ಕಾಗಿ ಬಳಸಲಾಗಿದೆ ಎಂದು ಪ್ರಮಾಣೀಕರಿಸುತ್ತೇವೆ. ಉಳಿದ ಮೊತ್ತವಾದ ರೂ. ................................ (ಮೊತ್ತ ಅಕ್ಷರಗಳಲ್ಲಿ ............................................................) ಗಳು ಇರುತ್ತದೆ ಎಂದು ದೃಢೀಕರಿಸಿದೆ.
+    </div>
+
+    <div class="date-row">
+        <label>ದಿನಾಂಕ :&nbsp;</label>
+        <input type="text" value="">
+    </div>
+
+    <div class="footer">
+        <div>
+            <p contenteditable="true">ಎಸ್ ಡಿ ಎಮ್ ಸಿ ಅಧ್ಯಕ್ಷರ ಸಹಿ ಮತ್ತು ಮೊಹರು.</p>
+        </div>
+        <div style="text-align: right;">
+            <p contenteditable="true">ಮುಖ್ಯ ಶಿಕ್ಷಕರ ಸಹಿ ಮತ್ತು ಮೊಹರು</p>
+        </div>
+    </div>
+
+    <div class="creator-credit" contenteditable="true">
+        ಗಮನಿಸಿ: ಈ ನಮೂನೆಯಲ್ಲಿ ವರ್ಷ,text   ತಮಗೆ ಬೇಕಾದ ರೀತಿ ಎಡಿಟ್ ಮಾಡಿಕೊಳ್ಳಬಹುದು. ಅವುಗಳ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ ಟೈಪ್ ಮಾಡಿ ಈ ಮಾಹಿತಿ ಅಳಿಸುವ ಅಗತ್ಯವಿಲ್ಲ ಪ್ರಿಂಟ್ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿದ ಕೂಡಲೇ Hide ಆಗುತ್ತದೆ
+    </div>
+
+</div>
+
+<script>
+function autoExpand(field) {
+    field.style.height = 'inherit';
+    field.style.height = `${field.scrollHeight}px`;
+}
+
+function addRow(){
+    let table = document.getElementById("grantTable");
+    let rowCount = table.rows.length;
+    let row = table.insertRow(-1);
+    row.innerHTML = `
+        <td><input type="text" value="0${rowCount}"></td>
+        <td><textarea rows="2" oninput="autoExpand(this)"></textarea></td>
+        <td><input type="text" value=""></td>
+        <td><input type="text" value=""></td>
+        <td><input type="text" value=""></td>
+        <td class="print-hide">
+            <button class="del" onclick="deleteRow(this)">X</button>
+        </td>
+    `;
+}
+
+function deleteRow(btn){
+    let row = btn.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+@media print{
+  .no-print{
+    display:none !important;
+  }
+}
+</style>
+
+<div class="no-print" style="text-align:center;margin:15px 0;">
+  <a href="https://bilingualmediumschools.blogspot.com/2026/04/home-page.html"
+     target="_blank"
+     style="display:inline-block;
+            background:#1565c0;
+            color:#fff;
+            text-decoration:none;
+            padding:10px 18px;
+            border-radius:8px;
+            font-weight:bold;
+            font-size:16px;">
+<br> ರಚನೆ: ಮನೋಹರ್ ಆರ್‌ ಕೆ.ಜಿ.ಎಫ್<br>
+    🌐 School Resource Centre – Click Here to Visit
+  </a>
+</div>
